@@ -1,3 +1,4 @@
+import { inject, injectable } from "tsyringe";
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 
@@ -6,8 +7,12 @@ interface IRequest {
     description: string
 }
 
+@injectable()
 class CreateCategoryUseCase {
-    constructor(private categoriesRepository: ICategoriesRepository){}
+    // constructor(private categoriesRepository: ICategoriesRepository){} antes do Singleton tsryn
+    constructor(
+        @inject("CategoriesRepository")
+        private categoriesRepository: ICategoriesRepository){}
 
     async execute({ description, name }: IRequest): Promise<void> {
 
