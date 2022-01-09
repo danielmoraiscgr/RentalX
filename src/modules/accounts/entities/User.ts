@@ -16,10 +16,10 @@ class User {
     email: string; 
     
     @Column()
-    driver_license: string; 
+    drive_license: string; 
     
     @Column()
-    admin?: boolean;
+    isAdmin?: boolean;
     
     @CreateDateColumn()
     created_at?: Date; 
