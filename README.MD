@@ -9,7 +9,8 @@
 
 [x] - Não deve ser possível cadastrar um carro com uma placa existente.
 [x] - O carro deve ser cadastrado, com padrão, com disponibilidade. 
-* (fazer no momento de fazer o controller) [] - O usuário responsável pelo cadastro deve ser um usuário administrador. 
+* (fazer no momento de fazer o controller) 
+[x] - O usuário responsável pelo cadastro deve ser um usuário administrador. 
 
 # Listagem de carros
 
