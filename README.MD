@@ -23,7 +23,7 @@
 
 **RN**
 
-[] - O usuário não precisa estar logado no sistema. 
+[x] - O usuário não precisa estar logado no sistema. 
 
 # Cadastro de Especificação no carro
 
@@ -31,18 +31,17 @@
 
 [x] - Deve ser possível cadastrar uma especificação para um carro.
 [x] - Deve ser possível listar todas as especificações
-[] - Deve ser possível listar todos os carros
+[x] - Deve ser possível listar todos os carros
 
 **RN**
 
-[] - Não deve ser possível cadastrar uma especificação para um carro não cadastrado. 
-[] - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
-[] - O usuário responsável pelo cadastro deve ser um usuário administrador. 
+[x] - Não deve ser possível cadastrar uma especificação para um carro não cadastrado. 
+[x] - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
+[x] - O usuário responsável pelo cadastro deve ser um usuário administrador. 
 
 # Cadastro de imagens do carro
 
 [] - Deve ser possível cadastrar a imagem do carro
-[] - Deve ser possível listar todos os carros
 
 **RNF**
 

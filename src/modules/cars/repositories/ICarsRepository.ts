@@ -1,4 +1,6 @@
-import { Car } from "../infra/typeorm/entities/car";
+import { ICreateCarDTO } from "../dtos/ICreateCarDTO";
+import { Car } from "../infra/typeorm/entities/Car";
+
 
 interface ICarsRepository {
 
