@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
+
 import { AppError } from "@shared/errors/AppError";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
-
 
 interface IRequest {
     name: string;
@@ -10,7 +10,6 @@ interface IRequest {
 
 @injectable()
 class CreateCategoryUseCase {
-    // constructor(private categoriesRepository: ICategoriesRepository){} antes do Singleton tsryn
     constructor(
         @inject("CategoriesRepository")
         private categoriesRepository: ICategoriesRepository){}

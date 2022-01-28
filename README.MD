@@ -16,10 +16,10 @@
 
 **RF**
 
-[] - Deve ser possível listar todos os carros disponíveis. 
-[] - Deve ser possível listar todos os carros disponíveis pelo nome da categoria
-[] - Deve ser possível listar todos os carros disponíveis pelo nome da marca
-[] - Deve ser possível listar todos os carros disponíveis pelo nome do carro
+[x] - Deve ser possível listar todos os carros disponíveis. 
+[x] - Deve ser possível listar todos os carros disponíveis pelo nome da categoria
+[x] - Deve ser possível listar todos os carros disponíveis pelo nome da marca
+[x] - Deve ser possível listar todos os carros disponíveis pelo nome do carro
 
 **RN**
 
@@ -29,8 +29,8 @@
 
 **RF** 
 
-[] - Deve ser possível cadastrar uma especificação para um carro.
-[] - Deve ser possível listar todas as especificações
+[x] - Deve ser possível cadastrar uma especificação para um carro.
+[x] - Deve ser possível listar todas as especificações
 [] - Deve ser possível listar todos os carros
 
 **RN**
