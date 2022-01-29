@@ -73,10 +73,7 @@ export class CreateRentals1643388051665 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropForeignKey("rentals","FKCarRental");
         
-        await queryRunner.dropForeignKey("rentals","FKUserRental");
-
         await queryRunner.dropTable("rentals")
     }
 
