@@ -10,9 +10,7 @@ describe("Create Category", () => {
     beforeEach(() => {
         categoriesRepositoryInMemory = new CategoriesRepositoryInMemory();
         createCategoryUseCase = new CreateCategoryUseCase(
-            categoriesRepositoryInMemory
-        );
-
+            categoriesRepositoryInMemory);
     })
 
     it("Should be able to create a new category", async () => {
