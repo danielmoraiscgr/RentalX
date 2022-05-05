@@ -8,6 +8,7 @@ interface IRequest {
     user_id: string; 
     avatar_file: string; 
 }
+
 @injectable()
 class UpdateUserAvatarUseCase { 
     constructor(
