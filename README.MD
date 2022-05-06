@@ -64,7 +64,7 @@
 [x] - Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário
 [x] - Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro
 [x] - O usuário deve estar logado na aplicação.
-[] - Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível
+[x] - Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível
 
 # Devolução de carro
 
@@ -86,8 +86,21 @@
 
 **RF**
 
-Deve ser possível realizar a busca de todos os alugueis para o usuário
+[x] - Deve ser possível realizar a busca de todos os alugueis para o usuário
 
 **RN** 
-O usuário deve estar logado na aplicação. 
+[x] - O usuário deve estar logado na aplicação. 
+
+# Recuperação Senha
+
+**RF** 
+[] - Deve ser possível o usuário recuperar a senha informando o e-mail
+[] - O usuário deve receber um e-mail com a passo a passo para a recuperação da senha
+[] - O usuário deve conseguir inserir uma nova senha
+
+**RN** 
+[] - O usuário precisa informar uma nova senha
+[] - O link enviado para a recuperação deve expirar em 3 horas. 
+
+
 
