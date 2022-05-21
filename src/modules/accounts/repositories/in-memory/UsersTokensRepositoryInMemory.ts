@@ -4,7 +4,7 @@ import { IUsersTokensRepository } from "../IUsersTokensRepository";
 
 class UsersTokensRepositoryInMemory implements IUsersTokensRepository{
 
-    usersTokens: UserTokens[];
+    usersTokens: UserTokens[] = [];
 
     async create({ expires_date, refresh_token, user_id }: ICreateUserTokenDTO): Promise<UserTokens> {
          const userToken = new UserTokens(); 
@@ -32,7 +32,7 @@ class UsersTokensRepositoryInMemory implements IUsersTokensRepository{
 
         this.usersTokens.splice(this.usersTokens.indexOf(userToken));
     }
-    
+
     async findByRefreshToken(refresh_token: string): Promise<UserTokens> {
        const userToken = this.usersTokens.find(ut => ut.refresh_token === refresh_token); 
 
