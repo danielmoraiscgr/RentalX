@@ -1,4 +1,4 @@
-import { classToClass } from "class-transformer";
+import { instanceToInstance } from "class-transformer";
 
 import { User } from "@modules/accounts/infra/typeorm/entities/User";
 import { IUserResponseDTO } from "../dtos/IUserResponseDTO";
@@ -13,7 +13,7 @@ class UserMap {
      drive_license,
      avatar_url,
    }: User): IUserResponseDTO {
-     const user = classToClass({
+     const user = instanceToInstance({
          email,
         name,
         id,
