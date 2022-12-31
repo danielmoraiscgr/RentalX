@@ -10,10 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-exports.default = (host = "database_ignite") => __awaiter(void 0, void 0, void 0, function* () {
+exports.default = () => __awaiter(void 0, void 0, void 0, function* () {
     const defaultOptions = yield (0, typeorm_1.getConnectionOptions)();
     return (0, typeorm_1.createConnection)(Object.assign(defaultOptions, {
-        host: process.env.NODE_ENV === 'test' ? 'localhost' : host,
         database: process.env.NODE_ENV === 'test'
             ? "rentx_test"
             : defaultOptions.database
