@@ -12,6 +12,7 @@
         "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
     },
     "dependencies": {
+        "@types/redis": "^4.0.11",
         "aws-sdk": "^2.1282.0",
         "bcryptjs": "^2.4.3",
         "class-transformer": "^0.5.1",
@@ -28,6 +29,8 @@
         "nodemailer": "^6.7.5",
         "nodemailer-sendgrid": "^1.0.3",
         "pg": "^8.7.1",
+        "rate-limiter-flexible": "^2.4.1",
+        "redis": "^4.5.1",
         "reflect-metadata": "^0.1.13",
         "swagger-ui-express": "^4.3.0",
         "tsyringe": "^4.6.0",
