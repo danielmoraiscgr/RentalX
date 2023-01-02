@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
+        "build": "babel src  --extensions \".js,.ts\" --out-dir dist --copy-files  --ignore '*.d.ts'",
         "build_tsc": "tsc",
         "dev": "ts-node-dev --inspect -r tsconfig-paths/register --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
         "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
@@ -12,6 +12,8 @@
         "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
     },
     "dependencies": {
+        "@sentry/node": "^7.28.1",
+        "@sentry/tracing": "^7.28.1",
         "@types/redis": "^4.0.11",
         "aws-sdk": "^2.1282.0",
         "bcryptjs": "^2.4.3",
